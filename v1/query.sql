@@ -19,13 +19,3 @@ INSERT INTO mantenedor (id, nombre) VALUES
 (1, "Ejemplo 1"),
 (2, "Ejemplo 2"),
 (3, "Ejemplo 3");
---PATCH ENABLE
-UPDATE mantenedor SET activo = true WHERE id = 3;
---PATCH DISABLE
-UPDATE mantenedor SET activo = false WHERE id = 3;
---PUT
-
-UPDATE mantenedor SET nombre = 'Example 3' WHERE id = 3;
-
---DELETE
-DELETE FROM mantenedor WHERE id = 3; 

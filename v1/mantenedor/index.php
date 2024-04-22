@@ -19,12 +19,6 @@ if ($_version == 'v1') {
         switch ($_metodo) {
             case 'GET':
                 if ($_header == $_token_get){
-                    /*
-                    include_once 'controller.php';
-                    include_once '../conexion.php';
-                    $control = new Controlador();
-                    $lista = $control->getAll();
-                    */
                     $lista = [
                         [
                             "id" => 0,
